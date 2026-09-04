@@ -1,0 +1,164 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 1357.0830077835935,
+            "y": 381.97287671618415
+          },
+          "nodeIndex": "current_weather",
+          "nodeLineageTag": "e2d2d142-8117-43a9-8694-e63ad56dbd4a",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1666.2947881131458,
+            "y": 385.59551491355603
+          },
+          "nodeIndex": "forecast_day",
+          "nodeLineageTag": "a3685b3d-9e07-4ede-a85d-1733a0949730",
+          "size": {
+            "height": 304.773572871659,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1046.3957196548515,
+            "y": 385.96415955938096
+          },
+          "nodeIndex": "forecast_hour",
+          "nodeLineageTag": "e9ec0421-12bf-4e7e-ada1-de6c205f106c",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 33.382346108128445,
+            "y": 324.49833381803785
+          },
+          "nodeIndex": "weather_data",
+          "nodeLineageTag": "f7a50058-cb7a-45e0-b807-6e878f63c4e1",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 550.992502542268
+          },
+          "nodeIndex": "weather_report1",
+          "nodeLineageTag": "61449142-422f-4635-8a33-2fbc4a7f2861",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 50,
+            "y": 559.54796143266071
+          },
+          "nodeIndex": "weather_report2",
+          "nodeLineageTag": "5b52ea49-c542-49ae-a03a-9859ee4f5be3",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 570.78960388641656
+          },
+          "nodeIndex": "weather_report3",
+          "nodeLineageTag": "b33f7e31-78c9-4d0a-8d9e-eca98f652801",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 552.69534315352576
+          },
+          "nodeIndex": "weather_report4",
+          "nodeLineageTag": "d2c0d9e0-3607-44f2-b732-0f5c6cc644dd",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 25.757755831889256,
+            "y": 551.43004683332515
+          },
+          "nodeIndex": "weather_report5",
+          "nodeLineageTag": "79e4721f-4413-4283-913a-6b953ff8149a",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1312.1752383733522,
+            "y": 79.696037496288355
+          },
+          "nodeIndex": "Location",
+          "nodeLineageTag": "955fcc95-5a47-439e-8156-bf6de428bcec",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1950.2947881131458,
+            "y": 322.11212902716022
+          },
+          "nodeIndex": "_Measures",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 50.346892102823517,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}

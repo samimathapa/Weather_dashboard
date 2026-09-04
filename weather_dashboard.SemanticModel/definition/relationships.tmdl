@@ -1,0 +1,164 @@
+relationship f99abb1d-1e10-48ad-ad35-ab9de708c488
+	joinOnDateBehavior: datePartOnly
+	fromColumn: weather_report1.'location.localtime'
+	toColumn: LocalDateTable_846c4548-afee-40e6-95ea-1b1777b5d1c5.Date
+
+relationship e9872200-141c-4f14-83a7-ebaa61b867c2
+	joinOnDateBehavior: datePartOnly
+	fromColumn: weather_report1.'current.last_updated'
+	toColumn: LocalDateTable_96da68cc-41f5-43b5-a7f6-e98a3a7aa446.Date
+
+relationship 3be87d75-c9d1-42fd-a073-45107fa634a4
+	joinOnDateBehavior: datePartOnly
+	fromColumn: weather_report1.'forecast.forecastday.date'
+	toColumn: LocalDateTable_3a156a6e-ebb9-4960-805f-668689ed47c3.Date
+
+relationship 944673ba-dd9d-4c48-9999-1f6b419cdb89
+	joinOnDateBehavior: datePartOnly
+	fromColumn: weather_report1.'forecast.forecastday.hour.time'
+	toColumn: LocalDateTable_e58d1a47-644f-40e7-a0b7-175e64d77211.Date
+
+relationship 306d2f89-e646-4436-8e8c-71c3f6b5ab5d
+	joinOnDateBehavior: datePartOnly
+	fromColumn: weather_report2.'location.localtime'
+	toColumn: LocalDateTable_26d7b4c2-3332-45f8-a1df-6536c00152a9.Date
+
+relationship c92b3f93-71e4-4397-abc2-ad307b397059
+	joinOnDateBehavior: datePartOnly
+	fromColumn: weather_report2.'current.last_updated'
+	toColumn: LocalDateTable_2fc6fcb3-5d1b-4fe7-817c-c8044e71075d.Date
+
+relationship 3f95f85a-c146-43ea-a1bb-9b1b5dd25b94
+	joinOnDateBehavior: datePartOnly
+	fromColumn: weather_report2.'forecast.forecastday.date'
+	toColumn: LocalDateTable_e67411e9-7e55-48e0-8ef5-bc7ee074222e.Date
+
+relationship 67cd00be-8f2b-4ca2-9554-fc7822ee6cbd
+	joinOnDateBehavior: datePartOnly
+	fromColumn: weather_report2.'forecast.forecastday.hour.time'
+	toColumn: LocalDateTable_25828074-9667-4ce1-9e03-7e8830e6bf4a.Date
+
+relationship 3ff5f9ea-6ddd-4c83-8f78-1f12feb48e27
+	joinOnDateBehavior: datePartOnly
+	fromColumn: weather_report3.'location.localtime'
+	toColumn: LocalDateTable_34636ac6-50a8-4882-8812-195f0620ecbc.Date
+
+relationship 9f723df2-bb93-4ec0-a9d9-9a9777ca50f6
+	joinOnDateBehavior: datePartOnly
+	fromColumn: weather_report3.'current.last_updated'
+	toColumn: LocalDateTable_283b1d37-292b-43be-9e90-a5641b5661b3.Date
+
+relationship b20ad5be-8154-4241-8f7d-288c40d1e712
+	joinOnDateBehavior: datePartOnly
+	fromColumn: weather_report3.'forecast.forecastday.date'
+	toColumn: LocalDateTable_e156bb94-bcea-492c-8ede-f52440e57ef6.Date
+
+relationship 4ed7830e-f4e7-4e08-9775-86a790309af3
+	joinOnDateBehavior: datePartOnly
+	fromColumn: weather_report3.'forecast.forecastday.hour.time'
+	toColumn: LocalDateTable_6ad8a173-bb23-4174-a362-7e274e0049fd.Date
+
+relationship 62129ef5-fd89-4a0f-a859-610599a2373a
+	joinOnDateBehavior: datePartOnly
+	fromColumn: weather_report4.'location.localtime'
+	toColumn: LocalDateTable_75d66fb4-32a5-4716-b491-e6d1ae2487e9.Date
+
+relationship f340c90e-cdad-4832-8469-ceb71871dee5
+	joinOnDateBehavior: datePartOnly
+	fromColumn: weather_report4.'current.last_updated'
+	toColumn: LocalDateTable_6c22e649-7eb2-46be-869a-c07eae96e658.Date
+
+relationship ca473bfe-39a3-40fd-8ced-3b549771f030
+	joinOnDateBehavior: datePartOnly
+	fromColumn: weather_report4.'forecast.forecastday.date'
+	toColumn: LocalDateTable_53ec9aa0-cd42-432d-af76-196274751425.Date
+
+relationship 46fb2282-1fb8-47e0-b848-3481ce6db8d4
+	joinOnDateBehavior: datePartOnly
+	fromColumn: weather_report4.'forecast.forecastday.hour.time'
+	toColumn: LocalDateTable_6f07de0a-0013-4a45-9f99-ed2cbe3c7d37.Date
+
+relationship d46d8426-db1c-486f-9c11-2dc31cb7ed13
+	joinOnDateBehavior: datePartOnly
+	fromColumn: weather_report5.'location.localtime'
+	toColumn: LocalDateTable_2e779229-6696-4e7c-a81b-c95ae1b82fc2.Date
+
+relationship 7b025883-4981-4f56-8b52-652bec1efe75
+	joinOnDateBehavior: datePartOnly
+	fromColumn: weather_report5.'current.last_updated'
+	toColumn: LocalDateTable_bb5c16bc-451b-4602-bda0-e996ce95f064.Date
+
+relationship 1391b93e-8a0b-40bb-a543-64a9ebee05f8
+	joinOnDateBehavior: datePartOnly
+	fromColumn: weather_report5.'forecast.forecastday.date'
+	toColumn: LocalDateTable_c77a2239-b082-44a1-909c-a608d354b466.Date
+
+relationship 8df5e209-043e-4ffc-a3bc-1506f99e97cf
+	joinOnDateBehavior: datePartOnly
+	fromColumn: weather_report5.'forecast.forecastday.hour.time'
+	toColumn: LocalDateTable_6ca15515-f16a-45c1-ad00-97745b944b2b.Date
+
+relationship a41384b4-5afc-4bf4-9f5d-cfc7c5f4393a
+	joinOnDateBehavior: datePartOnly
+	fromColumn: weather_data.'location.localtime'
+	toColumn: LocalDateTable_63569a75-132c-4a0f-bf46-886fc7276639.Date
+
+relationship 5dd5919a-ecca-43d7-9c7f-384e7f42df44
+	joinOnDateBehavior: datePartOnly
+	fromColumn: weather_data.'current.last_updated'
+	toColumn: LocalDateTable_8bb42e67-5b7e-4351-8203-308fa4c29f06.Date
+
+relationship 3d7e2086-6f0c-4081-9f0e-6651a81f2e28
+	joinOnDateBehavior: datePartOnly
+	fromColumn: weather_data.'forecast.forecastday.date'
+	toColumn: LocalDateTable_3ee34890-ec57-481a-9dbd-8005796a6cdd.Date
+
+relationship 1ca938e4-0c22-470e-8719-ea742d74febe
+	joinOnDateBehavior: datePartOnly
+	fromColumn: weather_data.'forecast.forecastday.hour.time'
+	toColumn: LocalDateTable_4148e2f9-177f-4ca7-b52f-8c7bd2f16f6c.Date
+
+relationship ed96687f-1b08-4eae-acd4-ac29a99e44a9
+	joinOnDateBehavior: datePartOnly
+	fromColumn: current_weather.'location.localtime'
+	toColumn: LocalDateTable_e0ed9379-ddb6-48f4-a677-39d6f69955a5.Date
+
+relationship 28bfe6e4-cc36-49f6-800b-a74b22b5d2dd
+	joinOnDateBehavior: datePartOnly
+	fromColumn: current_weather.'current.last_updated'
+	toColumn: LocalDateTable_4729bc7e-062d-45d6-a3e7-2f7cf86be533.Date
+
+relationship 9424ef24-3627-455b-b874-851014c08072
+	joinOnDateBehavior: datePartOnly
+	fromColumn: forecast_hour.'location.localtime'
+	toColumn: LocalDateTable_9a967631-801e-4915-9e1f-87c4b996829a.Date
+
+relationship de68ffbe-db0b-423a-abc1-cc48eb6ef3c6
+	joinOnDateBehavior: datePartOnly
+	fromColumn: forecast_hour.'forecast.forecastday.hour.time'
+	toColumn: LocalDateTable_a2aca3e6-ddae-488f-9b8e-b7e5f2b3b49a.Date
+
+relationship edc39b9e-f4a9-4af0-9661-072828b834df
+	joinOnDateBehavior: datePartOnly
+	fromColumn: forecast_day.'location.localtime'
+	toColumn: LocalDateTable_baec7977-1b98-4354-925b-646c4dafe646.Date
+
+relationship 694aab5c-15f9-4d15-85fc-3d7f7b6f9bf9
+	joinOnDateBehavior: datePartOnly
+	fromColumn: forecast_day.'forecast.forecastday.date'
+	toColumn: LocalDateTable_b54124c1-fae1-40a4-a899-026a37c44f98.Date
+
+relationship 7eecb2a9-ae4a-08f1-3cf2-09cff66dc689
+	fromColumn: forecast_hour.'location.name'
+	toColumn: Location.'location.name'
+
+relationship a5cb71f3-85e3-7d6a-66b7-e1ebddfbac40
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: current_weather.'location.name'
+	toColumn: Location.'location.name'
+
+relationship 1607f895-e9a3-9d3b-2a7e-f4df66406b85
+	fromColumn: forecast_day.'location.name'
+	toColumn: Location.'location.name'
+

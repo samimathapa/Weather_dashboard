@@ -1,0 +1,1936 @@
+table weather_data
+	isHidden
+	lineageTag: f7a50058-cb7a-45e0-b807-6e878f63c4e1
+
+	column 'location.name'
+		dataType: string
+		isHidden
+		lineageTag: 169f89ac-ee05-43cb-8f39-18e7f3fa8786
+		summarizeBy: none
+		sourceColumn: location.name
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'location.region'
+		dataType: string
+		isHidden
+		lineageTag: b36c33cd-8329-478b-8c3a-1c6ef86a5ecf
+		summarizeBy: none
+		sourceColumn: location.region
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'location.country'
+		dataType: string
+		isHidden
+		lineageTag: ee6553b1-6d3d-497c-abdd-97dbf7a59865
+		summarizeBy: none
+		sourceColumn: location.country
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'location.lat'
+		dataType: double
+		isHidden
+		lineageTag: 1ec3c0fa-add7-4848-9c14-bc85930c378c
+		summarizeBy: sum
+		sourceColumn: location.lat
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'location.lon'
+		dataType: double
+		isHidden
+		lineageTag: 85448805-0310-47f2-8fb3-d57e6528a975
+		summarizeBy: sum
+		sourceColumn: location.lon
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'location.tz_id'
+		dataType: string
+		isHidden
+		lineageTag: 4fdb3de0-8812-409f-904a-f7296489f24c
+		summarizeBy: none
+		sourceColumn: location.tz_id
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'location.localtime_epoch'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 56d1ee9b-beb2-4b7e-9e94-ac44407ceda5
+		summarizeBy: sum
+		sourceColumn: location.localtime_epoch
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'location.localtime'
+		dataType: dateTime
+		isHidden
+		formatString: General Date
+		lineageTag: 6fbf738b-d098-4353-820d-bde7a3279c2e
+		summarizeBy: none
+		sourceColumn: location.localtime
+
+		variation Variation
+			isDefault
+			relationship: a41384b4-5afc-4bf4-9f5d-cfc7c5f4393a
+			defaultHierarchy: LocalDateTable_63569a75-132c-4a0f-bf46-886fc7276639.'Date Hierarchy'
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'current.last_updated_epoch'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 1b1a1031-d8a8-40dc-9c37-5c1c1f603388
+		summarizeBy: sum
+		sourceColumn: current.last_updated_epoch
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'current.last_updated'
+		dataType: dateTime
+		isHidden
+		formatString: General Date
+		lineageTag: 0fe590df-1a45-4233-88c5-08bd9e1e2810
+		summarizeBy: none
+		sourceColumn: current.last_updated
+
+		variation Variation
+			isDefault
+			relationship: 5dd5919a-ecca-43d7-9c7f-384e7f42df44
+			defaultHierarchy: LocalDateTable_8bb42e67-5b7e-4351-8203-308fa4c29f06.'Date Hierarchy'
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'current.temp_c'
+		dataType: double
+		isHidden
+		lineageTag: 6a2dbde8-d96f-4987-9281-480a48aa0787
+		summarizeBy: sum
+		sourceColumn: current.temp_c
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'current.temp_f'
+		dataType: double
+		isHidden
+		lineageTag: eadc29a3-c93c-4ae2-8a8c-0eb149d9fe28
+		summarizeBy: sum
+		sourceColumn: current.temp_f
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'current.is_day'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: acfe22bb-6509-473f-aba5-8bb2af56a12a
+		summarizeBy: sum
+		sourceColumn: current.is_day
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'current.condition.text'
+		dataType: string
+		isHidden
+		lineageTag: 20130ca7-0176-4851-9c27-ec4aac956854
+		summarizeBy: none
+		sourceColumn: current.condition.text
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'current.condition.icon'
+		dataType: string
+		isHidden
+		lineageTag: a3a25f15-1bf3-479a-869c-5d56c42b1bff
+		summarizeBy: none
+		sourceColumn: current.condition.icon
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'current.condition.code'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 0f0994ac-c317-4dab-a51b-e938bfe8ca53
+		summarizeBy: sum
+		sourceColumn: current.condition.code
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'current.wind_mph'
+		dataType: double
+		isHidden
+		lineageTag: 50faa4a0-ea43-4505-ad0a-ce06c909b142
+		summarizeBy: sum
+		sourceColumn: current.wind_mph
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'current.wind_kph'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 24ae3e92-19e5-4587-b2d4-615f3ddc1d4c
+		summarizeBy: sum
+		sourceColumn: current.wind_kph
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'current.wind_degree'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: bd2b7d82-1bbe-4641-8617-86cf207ab7b1
+		summarizeBy: sum
+		sourceColumn: current.wind_degree
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'current.wind_dir'
+		dataType: string
+		isHidden
+		lineageTag: 90dce025-7da9-4055-8e0c-7c7fd8a95746
+		summarizeBy: none
+		sourceColumn: current.wind_dir
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'current.pressure_mb'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: b11f0f26-f8f7-4333-a315-83cef2b44ebb
+		summarizeBy: sum
+		sourceColumn: current.pressure_mb
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'current.pressure_in'
+		dataType: double
+		isHidden
+		lineageTag: 6c21f86f-dfbe-488e-9abf-c4fb543c61ef
+		summarizeBy: sum
+		sourceColumn: current.pressure_in
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'current.precip_mm'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 8f120ab2-9686-493a-8658-410a07024f89
+		summarizeBy: sum
+		sourceColumn: current.precip_mm
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'current.precip_in'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: b55c2c97-a965-404a-9997-362b90375dff
+		summarizeBy: sum
+		sourceColumn: current.precip_in
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'current.humidity'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: bf0cac5a-04b0-4b25-b712-cba1e7e253ef
+		summarizeBy: sum
+		sourceColumn: current.humidity
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'current.cloud'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: d77d2775-fb18-4554-b1b9-04be9d5cf9c1
+		summarizeBy: sum
+		sourceColumn: current.cloud
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'current.feelslike_c'
+		dataType: double
+		isHidden
+		lineageTag: 82ca26c8-bad2-453c-a7c1-f5bbdd0bda4d
+		summarizeBy: sum
+		sourceColumn: current.feelslike_c
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'current.feelslike_f'
+		dataType: double
+		isHidden
+		lineageTag: 6f8d42bc-77cf-45d4-9cc6-2e2ea0081135
+		summarizeBy: sum
+		sourceColumn: current.feelslike_f
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'current.windchill_c'
+		dataType: double
+		isHidden
+		lineageTag: f481dd28-baa0-4358-8b8a-b21a58b5f664
+		summarizeBy: sum
+		sourceColumn: current.windchill_c
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'current.windchill_f'
+		dataType: double
+		isHidden
+		lineageTag: c9a495b9-e059-4bc3-a4cd-d1af7988d355
+		summarizeBy: sum
+		sourceColumn: current.windchill_f
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'current.heatindex_c'
+		dataType: double
+		isHidden
+		lineageTag: adf61a50-ce47-4767-88fa-1258a55d631d
+		summarizeBy: sum
+		sourceColumn: current.heatindex_c
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'current.heatindex_f'
+		dataType: double
+		isHidden
+		lineageTag: 21450172-cde9-4385-b06b-ddbe63b2f701
+		summarizeBy: sum
+		sourceColumn: current.heatindex_f
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'current.dewpoint_c'
+		dataType: double
+		isHidden
+		lineageTag: 24c40834-7e59-45f3-b0d9-dadad48a5cf9
+		summarizeBy: sum
+		sourceColumn: current.dewpoint_c
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'current.dewpoint_f'
+		dataType: double
+		isHidden
+		lineageTag: 04c40a2e-2f79-49f5-96de-ff7da06d7023
+		summarizeBy: sum
+		sourceColumn: current.dewpoint_f
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'current.vis_km'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 4c1131db-0cc1-493c-9790-f623db7ca866
+		summarizeBy: sum
+		sourceColumn: current.vis_km
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'current.vis_miles'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: eedf503d-33fc-49ad-8812-b3f76beb59e3
+		summarizeBy: sum
+		sourceColumn: current.vis_miles
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'current.uv'
+		dataType: double
+		isHidden
+		lineageTag: d0e989f5-b59a-4a66-af5f-82cf2a399fd6
+		summarizeBy: sum
+		sourceColumn: current.uv
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'current.gust_mph'
+		dataType: double
+		isHidden
+		lineageTag: 19d435e3-ca88-4c81-83fe-ae6dc1a5a580
+		summarizeBy: sum
+		sourceColumn: current.gust_mph
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'current.gust_kph'
+		dataType: double
+		isHidden
+		lineageTag: 0a10982d-ea97-4031-a76c-09a8f7273ddb
+		summarizeBy: sum
+		sourceColumn: current.gust_kph
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'current.will_it_rain'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: cadfe2a1-814f-411f-9a9d-0df14deab080
+		summarizeBy: sum
+		sourceColumn: current.will_it_rain
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'current.chance_of_rain'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: a2e9a68a-d9ea-4fa2-ac9a-917a3e9e0ea2
+		summarizeBy: sum
+		sourceColumn: current.chance_of_rain
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'current.will_it_snow'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: e78bdbe7-deb4-41a9-81d3-87c771e03c58
+		summarizeBy: sum
+		sourceColumn: current.will_it_snow
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'current.chance_of_snow'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 081ebbe6-9957-4e53-a7d3-9ca6ab679ede
+		summarizeBy: sum
+		sourceColumn: current.chance_of_snow
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'current.wetbulb_c'
+		dataType: double
+		isHidden
+		lineageTag: 6d7cc0f1-aba7-454b-abad-b18ae8600a50
+		summarizeBy: sum
+		sourceColumn: current.wetbulb_c
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'current.wetbulb_f'
+		dataType: double
+		isHidden
+		lineageTag: 5ae53973-2dca-4c22-8b68-d3d4d66187e2
+		summarizeBy: sum
+		sourceColumn: current.wetbulb_f
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'current.air_quality.co'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 354ce6a4-41c4-44ae-b9b4-9d82f5f3c2f6
+		summarizeBy: sum
+		sourceColumn: current.air_quality.co
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'current.air_quality.no2'
+		dataType: double
+		isHidden
+		lineageTag: 220f4b99-8b78-471c-ba0e-1ce4c6d6df7d
+		summarizeBy: sum
+		sourceColumn: current.air_quality.no2
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'current.air_quality.o3'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 79c3c729-ec5c-4a62-8fc3-ac50cf1f1669
+		summarizeBy: sum
+		sourceColumn: current.air_quality.o3
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'current.air_quality.so2'
+		dataType: double
+		isHidden
+		lineageTag: 75a423b0-96e9-4cc1-a87f-e1323f46c825
+		summarizeBy: sum
+		sourceColumn: current.air_quality.so2
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'current.air_quality.pm2_5'
+		dataType: double
+		isHidden
+		lineageTag: f2d7d10c-d35b-43ff-b589-8567c28af662
+		summarizeBy: sum
+		sourceColumn: current.air_quality.pm2_5
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'current.air_quality.pm10'
+		dataType: double
+		isHidden
+		lineageTag: dc6e1fba-146f-4bcc-89e5-7f6694c4ec8f
+		summarizeBy: sum
+		sourceColumn: current.air_quality.pm10
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'current.air_quality.us-epa-index'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 56e2d36d-94c8-416a-b859-8e02efe4367c
+		summarizeBy: sum
+		sourceColumn: current.air_quality.us-epa-index
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'current.air_quality.gb-defra-index'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 2310192a-df7b-4c09-a915-c715668c063b
+		summarizeBy: sum
+		sourceColumn: current.air_quality.gb-defra-index
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'current.short_rad'
+		dataType: double
+		isHidden
+		lineageTag: 14ff7f56-1ed6-47bc-b1e0-c8f3b71ecabc
+		summarizeBy: sum
+		sourceColumn: current.short_rad
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'current.diff_rad'
+		dataType: double
+		isHidden
+		lineageTag: ac5c4e7c-629c-4e62-a6fb-60d25f5363b7
+		summarizeBy: sum
+		sourceColumn: current.diff_rad
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'current.dni'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 16864e39-e3c4-437e-9571-ec5d12345c75
+		summarizeBy: sum
+		sourceColumn: current.dni
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'current.gti'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 2ca19f3e-e01b-4940-a34f-5753d9d879c9
+		summarizeBy: sum
+		sourceColumn: current.gti
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'forecast.forecastday.date'
+		dataType: dateTime
+		isHidden
+		formatString: Long Date
+		lineageTag: c53533f0-acc9-485b-8382-0310ce55fff0
+		summarizeBy: none
+		sourceColumn: forecast.forecastday.date
+
+		variation Variation
+			isDefault
+			relationship: 3d7e2086-6f0c-4081-9f0e-6651a81f2e28
+			defaultHierarchy: LocalDateTable_3ee34890-ec57-481a-9dbd-8005796a6cdd.'Date Hierarchy'
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'forecast.forecastday.date_epoch'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: e9f146fe-e9ae-40b4-adb3-b2f9d6bf7875
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.date_epoch
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'forecast.forecastday.day.maxtemp_c'
+		dataType: double
+		isHidden
+		lineageTag: 0a0f8161-55db-4aef-aaed-bf04c9124652
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.day.maxtemp_c
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'forecast.forecastday.day.maxtemp_f'
+		dataType: double
+		isHidden
+		lineageTag: a7edff59-a032-4294-818a-28d995e83585
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.day.maxtemp_f
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'forecast.forecastday.day.mintemp_c'
+		dataType: double
+		isHidden
+		lineageTag: 3bb99fca-ab92-4469-9b84-ca9b6afee1a3
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.day.mintemp_c
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'forecast.forecastday.day.mintemp_f'
+		dataType: double
+		isHidden
+		lineageTag: 1055a573-83bf-4e37-a21f-1e1bed03433e
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.day.mintemp_f
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'forecast.forecastday.day.avgtemp_c'
+		dataType: double
+		isHidden
+		lineageTag: d7b56ef9-d51c-4171-88be-8039bc0e8705
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.day.avgtemp_c
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'forecast.forecastday.day.avgtemp_f'
+		dataType: double
+		isHidden
+		lineageTag: 1fd4f9ab-55b4-49b3-a861-04101932a871
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.day.avgtemp_f
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'forecast.forecastday.day.maxwind_mph'
+		dataType: double
+		isHidden
+		lineageTag: 7ec3d59c-0c38-47d9-a794-1dcd2dd54c8b
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.day.maxwind_mph
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'forecast.forecastday.day.maxwind_kph'
+		dataType: double
+		isHidden
+		lineageTag: 72d7ac76-2828-45a6-bf45-30885ef27859
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.day.maxwind_kph
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'forecast.forecastday.day.totalprecip_mm'
+		dataType: double
+		isHidden
+		lineageTag: ac3439cd-acde-44b1-a45a-3492e3bb34d2
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.day.totalprecip_mm
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'forecast.forecastday.day.totalprecip_in'
+		dataType: double
+		isHidden
+		lineageTag: 0b39779c-6c71-484c-80af-52cfa966054c
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.day.totalprecip_in
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'forecast.forecastday.day.totalsnow_cm'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 6256da95-c564-4664-bcc9-9a256477f6b7
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.day.totalsnow_cm
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'forecast.forecastday.day.avgvis_km'
+		dataType: double
+		isHidden
+		lineageTag: 26908676-b71b-4e34-9c49-6eeedcaf7204
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.day.avgvis_km
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'forecast.forecastday.day.avgvis_miles'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: c105ae63-a7b0-4b3e-a11a-6bafd8c71ddd
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.day.avgvis_miles
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'forecast.forecastday.day.avghumidity'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: b078b136-7ae2-4022-91ab-b0321ba3c088
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.day.avghumidity
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'forecast.forecastday.day.daily_will_it_rain'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: d11e2c96-cf2e-4b54-8e8c-c116848cd956
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.day.daily_will_it_rain
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'forecast.forecastday.day.daily_chance_of_rain'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: edb83346-3e2e-4845-afd7-47299d09b090
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.day.daily_chance_of_rain
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'forecast.forecastday.day.daily_will_it_snow'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 37b92360-f954-4088-8ca9-de073a104b0d
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.day.daily_will_it_snow
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'forecast.forecastday.day.daily_chance_of_snow'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: b960e162-6110-4a3c-afb3-d316bd1fdcb5
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.day.daily_chance_of_snow
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'forecast.forecastday.day.condition.text'
+		dataType: string
+		isHidden
+		lineageTag: af21fa4f-2644-44b6-9847-9c45af7f302d
+		summarizeBy: none
+		sourceColumn: forecast.forecastday.day.condition.text
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'forecast.forecastday.day.condition.icon'
+		dataType: string
+		isHidden
+		lineageTag: b72bd443-947d-4816-b6d7-7fa76273fb8d
+		summarizeBy: none
+		sourceColumn: forecast.forecastday.day.condition.icon
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'forecast.forecastday.day.condition.code'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 941705f2-031c-4fb0-9f0d-a129ad72d162
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.day.condition.code
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'forecast.forecastday.day.uv'
+		dataType: double
+		isHidden
+		lineageTag: d01d538e-4f17-4f88-8838-905870290ce9
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.day.uv
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'forecast.forecastday.day.avgwetbulb_c'
+		dataType: double
+		isHidden
+		lineageTag: 474b276f-3c5d-4773-a585-9deaa28a0c45
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.day.avgwetbulb_c
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'forecast.forecastday.day.avgwetbulb_f'
+		dataType: double
+		isHidden
+		lineageTag: 460fd21c-c708-4334-8525-2d5ad7223190
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.day.avgwetbulb_f
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'forecast.forecastday.day.maxwetbulb_c'
+		dataType: double
+		isHidden
+		lineageTag: 34469dd0-1bd3-4c6d-8da4-bc4cb1ecb606
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.day.maxwetbulb_c
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'forecast.forecastday.day.maxwetbulb_f'
+		dataType: double
+		isHidden
+		lineageTag: 106c87ce-a608-4b7e-8a14-5daa9ecdc3db
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.day.maxwetbulb_f
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'forecast.forecastday.day.air_quality.co'
+		dataType: double
+		isHidden
+		lineageTag: f022926c-38a7-41fa-9449-4530cdfa989a
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.day.air_quality.co
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'forecast.forecastday.day.air_quality.no2'
+		dataType: double
+		isHidden
+		lineageTag: 248b3b86-30d6-462e-8d6d-e4717f7c530f
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.day.air_quality.no2
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'forecast.forecastday.day.air_quality.o3'
+		dataType: double
+		isHidden
+		lineageTag: 1830502a-69b0-4ef2-a25c-3462bf4b7ac5
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.day.air_quality.o3
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'forecast.forecastday.day.air_quality.so2'
+		dataType: double
+		isHidden
+		lineageTag: baf46705-150a-4f12-9c68-c6b21425f29f
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.day.air_quality.so2
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'forecast.forecastday.day.air_quality.pm2_5'
+		dataType: double
+		isHidden
+		lineageTag: e75908ec-6a6c-4992-8cb5-8485d02edf11
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.day.air_quality.pm2_5
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'forecast.forecastday.day.air_quality.pm10'
+		dataType: double
+		isHidden
+		lineageTag: bb787cfa-0695-4340-a2c9-edd12820cdd1
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.day.air_quality.pm10
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'forecast.forecastday.day.air_quality.us-epa-index'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 8c452709-2bcb-4500-b8bc-0356ea9a8963
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.day.air_quality.us-epa-index
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'forecast.forecastday.day.air_quality.gb-defra-index'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: e8993750-091d-46e6-b90b-a0582f29b5ee
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.day.air_quality.gb-defra-index
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'forecast.forecastday.day.air_quality.aqi_data'
+		dataType: string
+		isHidden
+		lineageTag: 825b67f1-8b87-4480-8505-428353a39ab4
+		summarizeBy: none
+		sourceColumn: forecast.forecastday.day.air_quality.aqi_data
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'forecast.forecastday.astro.sunrise'
+		dataType: dateTime
+		isHidden
+		formatString: Long Time
+		lineageTag: 83ba490d-b23b-4201-aed8-092db7e3c620
+		summarizeBy: none
+		sourceColumn: forecast.forecastday.astro.sunrise
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Time
+
+	column 'forecast.forecastday.astro.sunset'
+		dataType: dateTime
+		isHidden
+		formatString: Long Time
+		lineageTag: 75a68385-398f-4c27-9833-d3f552284462
+		summarizeBy: none
+		sourceColumn: forecast.forecastday.astro.sunset
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Time
+
+	column 'forecast.forecastday.astro.moonrise'
+		dataType: dateTime
+		isHidden
+		formatString: Long Time
+		lineageTag: 87f6332d-27f2-41bf-a258-455ddc1175f3
+		summarizeBy: none
+		sourceColumn: forecast.forecastday.astro.moonrise
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Time
+
+	column 'forecast.forecastday.astro.moonset'
+		dataType: dateTime
+		isHidden
+		formatString: Long Time
+		lineageTag: 5a1dacdb-7104-4958-ac5b-1e7edcb3146b
+		summarizeBy: none
+		sourceColumn: forecast.forecastday.astro.moonset
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Time
+
+	column 'forecast.forecastday.astro.moon_phase'
+		dataType: string
+		isHidden
+		lineageTag: 36026120-1eb1-4108-b3be-d7f3a651cd96
+		summarizeBy: none
+		sourceColumn: forecast.forecastday.astro.moon_phase
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'forecast.forecastday.astro.moon_illumination'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: e82f9771-bf9d-4897-8259-ef9cfe4e22f2
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.astro.moon_illumination
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'forecast.forecastday.astro.is_moon_up'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 13b983ab-845c-44d8-b9e0-717a5e08c216
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.astro.is_moon_up
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'forecast.forecastday.astro.is_sun_up'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 910bbec6-d6c3-4752-a7e1-9d8f4eb7b5dc
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.astro.is_sun_up
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'forecast.forecastday.hour.time_epoch'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 778810ae-2ba5-45b4-8c28-859b30fa7f7d
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.hour.time_epoch
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'forecast.forecastday.hour.time'
+		dataType: dateTime
+		isHidden
+		formatString: General Date
+		lineageTag: c63d11ce-ce11-4f8c-bb2a-333af31df411
+		summarizeBy: none
+		sourceColumn: forecast.forecastday.hour.time
+
+		variation Variation
+			isDefault
+			relationship: 1ca938e4-0c22-470e-8719-ea742d74febe
+			defaultHierarchy: LocalDateTable_4148e2f9-177f-4ca7-b52f-8c7bd2f16f6c.'Date Hierarchy'
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'forecast.forecastday.hour.temp_c'
+		dataType: double
+		isHidden
+		lineageTag: bf19f0cf-0149-46c4-81a4-0cf70d74cbdc
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.hour.temp_c
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'forecast.forecastday.hour.temp_f'
+		dataType: double
+		isHidden
+		lineageTag: b392995d-91aa-4d8b-9b55-efa819d60fa5
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.hour.temp_f
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'forecast.forecastday.hour.is_day'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: c3510166-1ef2-432d-aee8-e629ad5e2180
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.hour.is_day
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'forecast.forecastday.hour.condition.text'
+		dataType: string
+		isHidden
+		lineageTag: fd73a77b-ddd1-4186-a765-5107d0a5e7d3
+		summarizeBy: none
+		sourceColumn: forecast.forecastday.hour.condition.text
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'forecast.forecastday.hour.condition.icon'
+		dataType: string
+		isHidden
+		lineageTag: 220ceedb-3e77-46a9-9dae-0225c3952780
+		summarizeBy: none
+		sourceColumn: forecast.forecastday.hour.condition.icon
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'forecast.forecastday.hour.condition.code'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 22f7c5a8-e024-4291-b523-23a4c0682af2
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.hour.condition.code
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'forecast.forecastday.hour.wind_mph'
+		dataType: double
+		isHidden
+		lineageTag: 2aa66cc8-a17c-44e2-9d54-91a8f91c50ab
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.hour.wind_mph
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'forecast.forecastday.hour.wind_kph'
+		dataType: double
+		isHidden
+		lineageTag: 4d74de8d-4f4e-4dfb-a402-3a9d31b86363
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.hour.wind_kph
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'forecast.forecastday.hour.wind_degree'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: e912ff9d-05d8-4c9c-b9f8-1d712cece94a
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.hour.wind_degree
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'forecast.forecastday.hour.wind_dir'
+		dataType: string
+		isHidden
+		lineageTag: 84ed7e38-1624-49d2-aa1b-d55eb819c03f
+		summarizeBy: none
+		sourceColumn: forecast.forecastday.hour.wind_dir
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'forecast.forecastday.hour.pressure_mb'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: f6b9e5f0-cf37-4c48-a216-fb4407f4dfc7
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.hour.pressure_mb
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'forecast.forecastday.hour.pressure_in'
+		dataType: double
+		isHidden
+		lineageTag: be7ce480-0d32-46bb-9a08-12aedf9794d8
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.hour.pressure_in
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'forecast.forecastday.hour.precip_mm'
+		dataType: double
+		isHidden
+		lineageTag: d5466a2c-0220-4d3f-98b8-4d979d42a7b5
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.hour.precip_mm
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'forecast.forecastday.hour.precip_in'
+		dataType: double
+		isHidden
+		lineageTag: 2768952b-fe8c-4c2a-9f58-82911da126bb
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.hour.precip_in
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'forecast.forecastday.hour.snow_cm'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: a3b9a011-8175-4076-a69b-588c81eaf959
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.hour.snow_cm
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'forecast.forecastday.hour.humidity'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 795aad83-4506-41b2-96dd-50b33353dffa
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.hour.humidity
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'forecast.forecastday.hour.cloud'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 6c848e16-a39c-40b7-82f4-3c6b06eb8ae6
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.hour.cloud
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'forecast.forecastday.hour.feelslike_c'
+		dataType: double
+		isHidden
+		lineageTag: c8d4f8d2-488b-4f2e-ae27-7cc032940152
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.hour.feelslike_c
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'forecast.forecastday.hour.feelslike_f'
+		dataType: double
+		isHidden
+		lineageTag: cbfc7d71-8e27-43f2-9db8-60c8681792f6
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.hour.feelslike_f
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'forecast.forecastday.hour.windchill_c'
+		dataType: double
+		isHidden
+		lineageTag: 5756751b-896d-4325-97a2-8fb5bd4069fa
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.hour.windchill_c
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'forecast.forecastday.hour.windchill_f'
+		dataType: double
+		isHidden
+		lineageTag: 65b6c31a-9163-4f5d-aba3-e808ac0579b8
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.hour.windchill_f
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'forecast.forecastday.hour.heatindex_c'
+		dataType: double
+		isHidden
+		lineageTag: 91ce3acb-4b56-4151-8986-13c5aa4bc863
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.hour.heatindex_c
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'forecast.forecastday.hour.heatindex_f'
+		dataType: double
+		isHidden
+		lineageTag: 9b516d0d-45cf-4d9d-a71c-6cf055f977de
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.hour.heatindex_f
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'forecast.forecastday.hour.dewpoint_c'
+		dataType: double
+		isHidden
+		lineageTag: 84a494c9-b057-4678-b71c-945f2974ccb9
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.hour.dewpoint_c
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'forecast.forecastday.hour.dewpoint_f'
+		dataType: double
+		isHidden
+		lineageTag: 811e32b1-ed8f-4dfb-8121-884465bbf5b6
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.hour.dewpoint_f
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'forecast.forecastday.hour.will_it_rain'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: d376d4a3-bb9d-4c28-afe0-4decb408ff5c
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.hour.will_it_rain
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'forecast.forecastday.hour.chance_of_rain'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: ecacf904-7094-4096-b53a-24c7efa7c7b5
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.hour.chance_of_rain
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'forecast.forecastday.hour.will_it_snow'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: af677734-b330-426c-83af-5332981c5cb7
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.hour.will_it_snow
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'forecast.forecastday.hour.chance_of_snow'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 2931889f-1dfb-4a08-a35b-28565ac04962
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.hour.chance_of_snow
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'forecast.forecastday.hour.vis_km'
+		dataType: double
+		isHidden
+		lineageTag: 0784555d-d1e2-4a3b-a56b-026a15360792
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.hour.vis_km
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'forecast.forecastday.hour.vis_miles'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: c584a782-04d6-4eb5-ba67-0ffd02efdcde
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.hour.vis_miles
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'forecast.forecastday.hour.gust_mph'
+		dataType: double
+		isHidden
+		lineageTag: 13309f7a-ebb0-4df0-8172-3a9869981b2a
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.hour.gust_mph
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'forecast.forecastday.hour.gust_kph'
+		dataType: double
+		isHidden
+		lineageTag: 4dff1376-104d-48e7-856e-890473d2cc7e
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.hour.gust_kph
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'forecast.forecastday.hour.uv'
+		dataType: double
+		isHidden
+		lineageTag: 1f4420a1-d50b-45c7-8e08-16ea49c7c09e
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.hour.uv
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'forecast.forecastday.hour.wetbulb_c'
+		dataType: double
+		isHidden
+		lineageTag: abe652d3-5cb4-4fec-9acb-51fd3a9b5d69
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.hour.wetbulb_c
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'forecast.forecastday.hour.wetbulb_f'
+		dataType: double
+		isHidden
+		lineageTag: c23267ea-7e4e-492a-823a-f0292e7416d8
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.hour.wetbulb_f
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'forecast.forecastday.hour.air_quality.co'
+		dataType: double
+		isHidden
+		lineageTag: ee0408a6-c2ee-4f2f-9b52-1a417ce3237d
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.hour.air_quality.co
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'forecast.forecastday.hour.air_quality.no2'
+		dataType: double
+		isHidden
+		lineageTag: 8d7f12ed-7f27-4710-bca1-6ae48bbbf7a2
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.hour.air_quality.no2
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'forecast.forecastday.hour.air_quality.o3'
+		dataType: double
+		isHidden
+		lineageTag: efdf4f56-f2ab-4216-8037-9a085222a22a
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.hour.air_quality.o3
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'forecast.forecastday.hour.air_quality.so2'
+		dataType: double
+		isHidden
+		lineageTag: e8fa3db7-747c-4edf-84ff-238c244e4ed2
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.hour.air_quality.so2
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'forecast.forecastday.hour.air_quality.pm2_5'
+		dataType: double
+		isHidden
+		lineageTag: 1ee7837d-3a16-4772-88a1-404c50a8b105
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.hour.air_quality.pm2_5
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'forecast.forecastday.hour.air_quality.pm10'
+		dataType: double
+		isHidden
+		lineageTag: 95cddd28-00f5-4bce-8580-6bf68896752d
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.hour.air_quality.pm10
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'forecast.forecastday.hour.air_quality.us-epa-index'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: aed3843f-2195-4e58-9a9a-21aa0c7e9175
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.hour.air_quality.us-epa-index
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'forecast.forecastday.hour.air_quality.gb-defra-index'
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 17f3324a-b93e-4192-8c27-554c9c298112
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.hour.air_quality.gb-defra-index
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'forecast.forecastday.hour.short_rad'
+		dataType: double
+		isHidden
+		lineageTag: 0f35c394-8d80-4e47-b2c3-e342b18ecdee
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.hour.short_rad
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'forecast.forecastday.hour.diff_rad'
+		dataType: double
+		isHidden
+		lineageTag: 78d5a1c0-b152-4bbd-a433-3ed58d711932
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.hour.diff_rad
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'forecast.forecastday.hour.dni'
+		dataType: double
+		isHidden
+		lineageTag: e314bd7e-f8e4-4348-ab4b-0193a714c2f0
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.hour.dni
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'forecast.forecastday.hour.gti'
+		dataType: double
+		isHidden
+		lineageTag: cc869d48-6f89-44b5-92c0-dc28a595a319
+		summarizeBy: sum
+		sourceColumn: forecast.forecastday.hour.gti
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition weather_data = m
+		mode: import
+		source =
+				let
+				    Source = Table.Combine({weather_report1, weather_report2, weather_report3, weather_report4, weather_report5})
+				in
+				    Source
+
+	changedProperty = IsHidden
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
