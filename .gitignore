@@ -1,0 +1,17 @@
+# Power BI Desktop - local cache and settings (not meant to be shared)
+**/.pbi/localSettings.json
+**/.pbi/cache.abf
+**/.pbi/
+ 
+# Power BI temp/lock/backup files
+~$*
+*.tmp
+*.pbix.bak
+ 
+# OS-generated files
+.DS_Store
+Thumbs.db
+ 
+# Optional: uncomment if you don't want to track the raw .pbix
+# and are relying on .pbip + .Report + .SemanticModel as your source of truth
+# *.pbix
