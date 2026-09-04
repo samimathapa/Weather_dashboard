@@ -23,13 +23,6 @@ To build a single-page, at-a-glance weather dashboard for selected cities (Paris
 - City selector (Paris / Antalya / Brussels / Berlin / London) drives the current-conditions panel
 - Air quality shown both as a composite CO-based gauge and as individual pollutant readings (O3, SO2, NO2, PM10, PM2.5)
 
-## Findings
-
-- Berlin's forecast shows a gradual cooling trend across the week, from 22.7°C (Fri) down to 19.4°C (Wed)
-- Air quality (CO: 241) sits in a moderate range, with PM2.5 and PM10 readings that are comparatively low (8.30 and 9.40) relative to the CO reading
-- Rainfall chances vary sharply across the week — highest on Monday (65%) and Saturday (40%), dropping to near zero by midweek (Tue, Thu)
-- Of the tracked cities, Antalya is running noticeably warmer (28.5°C) than Berlin (19.0°C) and Brussels (23.8°C) on the same day
-
 ## Conclusion
 
 The dashboard successfully consolidates current conditions, a 7-day outlook, and air quality into one view, making it easy to compare cities and anticipate the week ahead at a glance. Since it depends on a live API, its main limitation is that insights are only as current as the last refresh — for production use, scheduling automatic refreshes (e.g. via Power BI service with a stored API key) would keep it up to date without manual intervention.
