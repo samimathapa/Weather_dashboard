@@ -1,0 +1,43 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "4de774ebd8595e1444df",
+  "position": {
+    "x": 1770,
+    "y": 366,
+    "z": 37000,
+    "height": 150,
+    "width": 150,
+    "tabOrder": 36000
+  },
+  "visual": {
+    "visualType": "clusteredColumnChart",
+    "query": {
+      "queryState": {
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "current_weather"
+                        }
+                      },
+                      "Property": "current.air_quality.pm10"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(current_weather.current.air_quality.pm10)",
+              "nativeQueryRef": "Sum of current.air_quality.pm10"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

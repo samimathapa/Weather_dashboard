@@ -1,0 +1,121 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.3.0/schema.json",
+  "themeCollection": {
+    "baseTheme": {
+      "name": "Fluent2-CY26SU08",
+      "reportVersionAtImport": {
+        "visual": "2.12.0",
+        "report": "3.4.0",
+        "page": "2.3.1"
+      },
+      "type": "SharedResources"
+    }
+  },
+  "objects": {
+    "section": [
+      {
+        "properties": {
+          "verticalAlignment": {
+            "expr": {
+              "Literal": {
+                "Value": "'Top'"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspacePane": [
+      {
+        "properties": {
+          "expanded": {
+            "expr": {
+              "Literal": {
+                "Value": "true"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "resourcePackages": [
+    {
+      "name": "SharedResources",
+      "type": "SharedResources",
+      "items": [
+        {
+          "name": "Fluent2-CY26SU08",
+          "path": "BaseThemes/Fluent2-CY26SU08.json",
+          "type": "BaseTheme"
+        }
+      ]
+    },
+    {
+      "name": "RegisteredResources",
+      "type": "RegisteredResources",
+      "items": [
+        {
+          "name": "dashboard_template9599299185969686.png",
+          "path": "dashboard_template9599299185969686.png",
+          "type": "Image"
+        },
+        {
+          "name": "icons8-eye-486086699598368583.png",
+          "path": "icons8-eye-486086699598368583.png",
+          "type": "Image"
+        },
+        {
+          "name": "icons8-humidity-5014969204300428895.png",
+          "path": "icons8-humidity-5014969204300428895.png",
+          "type": "Image"
+        },
+        {
+          "name": "icons8-location-509821325857762262.png",
+          "path": "icons8-location-509821325857762262.png",
+          "type": "Image"
+        },
+        {
+          "name": "icons8-precipitation-489048522183888077.png",
+          "path": "icons8-precipitation-489048522183888077.png",
+          "type": "Image"
+        },
+        {
+          "name": "icons8-sunrise-509191503443415474.png",
+          "path": "icons8-sunrise-509191503443415474.png",
+          "type": "Image"
+        },
+        {
+          "name": "icons8-sunset-509952010561266312.png",
+          "path": "icons8-sunset-509952010561266312.png",
+          "type": "Image"
+        },
+        {
+          "name": "icons8-thermometer-48379237947563281.png",
+          "path": "icons8-thermometer-48379237947563281.png",
+          "type": "Image"
+        },
+        {
+          "name": "icons8-uv-index-6441895266141094545.png",
+          "path": "icons8-uv-index-6441895266141094545.png",
+          "type": "Image"
+        },
+        {
+          "name": "icons8-wind-647744354280367183.png",
+          "path": "icons8-wind-647744354280367183.png",
+          "type": "Image"
+        }
+      ]
+    }
+  ],
+  "settings": {
+    "useStylableVisualContainerHeader": true,
+    "exportDataMode": "AllowSummarized",
+    "defaultDrillFilterOtherVisuals": true,
+    "allowChangeFilterTypes": true,
+    "useEnhancedTooltips": true,
+    "useDefaultAggregateDisplayName": true,
+    "customMemoryLimit": "1048576",
+    "customTimeoutLimit": "225"
+  }
+}
